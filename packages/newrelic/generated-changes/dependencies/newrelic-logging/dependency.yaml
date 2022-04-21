@@ -1,0 +1,3 @@
+workingDir: ""
+url: https://github.com/shawnj/helm-charts/releases/download/nri-bundle-3.6.2/nri-bundle-test-3.6.2.tar.gz
+subdirectory: ../newrelic-logging

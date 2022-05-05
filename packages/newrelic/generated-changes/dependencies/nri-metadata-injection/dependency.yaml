@@ -1,3 +1,2 @@
 workingDir: ""
-url: https://github.com/shawnj/helm-charts/releases/download/nri-bundle-3.6.2/nri-bundle-test-3.6.2.tar.gz
-subdirectory: ../nri-metadata-injection
+url: https://github.com/newrelic/k8s-metadata-injection/releases/download/nri-metadata-injection-3.0.1/nri-metadata-injection-3.0.1.tgz

@@ -1,3 +1,2 @@
 workingDir: ""
-url: https://github.com/shawnj/helm-charts/releases/download/nri-bundle-3.6.2/nri-bundle-test-3.6.2.tar.gz
-subdirectory: ../newrelic-pixie
+url: https://github.com/newrelic/helm-charts/releases/download/newrelic-pixie-1.5.1/newrelic-pixie-1.5.1.tgz

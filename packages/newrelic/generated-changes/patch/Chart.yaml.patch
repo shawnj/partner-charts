@@ -1,15 +1,8 @@
 --- charts-original/Chart.yaml
 +++ charts/Chart.yaml
-@@ -34,10 +34,12 @@
-   repository: file://./charts/pixie-operator-helm2-chart
- description: New Relic Synthetics Containerized Private Minion (CPM)
- home: https://github.com/orgs/newrelic/teams/proactive-monitoring
-+icon: https://newrelic.com/themes/custom/curio/assets/mediakit/new_relic_logo_vertical.png
- keywords:
- - synthetics
- - synthetics-minion
- - newrelic
-+kubeVersion: ">= 1.19"
- maintainers:
- - name: Philip-R-Beckwith
- - name: sshah-nr
+@@ -1,4 +1,5 @@
+ apiVersion: v2
++kubeVersion: "1.16 - 1.22"
+ dependencies:
+ - condition: ksm.enabled
+   name: kube-state-metrics

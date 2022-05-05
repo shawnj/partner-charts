@@ -1,3 +1,2 @@
 workingDir: ""
-url: https://github.com/shawnj/helm-charts/releases/download/nri-bundle-3.6.2/nri-bundle-test-3.6.2.tar.gz
-subdirectory: ../newrelic-infrastructure
+url: https://github.com/newrelic/nri-kubernetes/releases/download/newrelic-infrastructure-3.3.3/newrelic-infrastructure-3.3.3.tgz

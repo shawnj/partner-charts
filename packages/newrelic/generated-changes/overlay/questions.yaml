@@ -46,7 +46,7 @@ questions:
   subquestions:
   - variable: newrelic-pixie.apiKey
     default: ""
-    required: true
+    required: false
     type: string
     label: New Relic Pixie API Key
     group: "Select Components"
@@ -60,15 +60,15 @@ questions:
   subquestions:
   - variable: pixie-chart.deployKey
     default: ""
-    required: true
+    required: false
     type: string
     label: Pixie Deploy Key
     group: "Select Components"
   - variable: pixie-chart.clusterName
     default: ""
-    required: true
+    required: false
     type: string
-    label: Kubernetes Cluster Name
+    label: Kubernetes Cluster Name for Pixie
     group: "Select Components"
 - variable: newrelic-infra-operator.enabled
   default: false

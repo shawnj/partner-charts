@@ -2904,7 +2904,6 @@ entries:
   - annotations:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/display-name: New Relic
-      catalog.cattle.io/namespace: newrelic
       catalog.cattle.io/release-name: newrelic-bundle
     apiVersion: v2
     created: "2022-05-06T13:31:27.28363-07:00"

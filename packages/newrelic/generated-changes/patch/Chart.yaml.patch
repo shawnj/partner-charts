@@ -20,12 +20,3 @@
  keywords:
  - infrastructure
  - newrelic
-@@ -59,7 +65,7 @@
-   url: https://github.com/paologallinaharbur
- - name: roobre
-   url: https://github.com/roobre
--name: nri-bundle
-+name: New Relic
- sources:
- - https://github.com/newrelic/nri-bundle/
- - https://github.com/newrelic/nri-bundle/tree/master/charts/nri-bundle

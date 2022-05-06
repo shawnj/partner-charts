@@ -1,7 +1,6 @@
 annotations:
   catalog.cattle.io/certified: partner
   catalog.cattle.io/display-name: New Relic
-  catalog.cattle.io/namespace: newrelic
   catalog.cattle.io/release-name: newrelic-bundle
 apiVersion: v2
 dependencies:

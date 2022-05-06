@@ -16,7 +16,16 @@
    solution for more comfortable deployment.
  home: https://github.com/newrelic/helm-charts
 -icon: https://newrelic.com/assets/newrelic/source/NewRelic-logo-square.svg
-+icon: https://newrelic.com/themes/custom/curio/assets/mediakit/new_relic_logo_vertical.png
++icon: https://partner-charts.rancher.io/assets/logos/newrelic.png
  keywords:
  - infrastructure
  - newrelic
+@@ -59,7 +65,7 @@
+   url: https://github.com/paologallinaharbur
+ - name: roobre
+   url: https://github.com/roobre
+-name: nri-bundle
++name: New Relic
+ sources:
+ - https://github.com/newrelic/nri-bundle/
+ - https://github.com/newrelic/nri-bundle/tree/master/charts/nri-bundle

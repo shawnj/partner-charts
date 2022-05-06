@@ -88,7 +88,7 @@ questions:
   type: string
   label: New Relic License Key
   group: "Global Settings"
-- variable: global.clusterName
+- variable: global.cluster
   default: "xxxx"
   required: true
   type: string

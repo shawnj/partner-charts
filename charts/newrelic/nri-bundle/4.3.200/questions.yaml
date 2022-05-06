@@ -61,7 +61,7 @@ questions:
   - variable: pixie-chart.deployKey
     default: ""
     required: true
-    type: secret
+    type: string
     label: Pixie Deploy Key
     group: "Select Components"
   - variable: pixie-chart.clusterName
@@ -85,7 +85,7 @@ questions:
 - variable: global.licenseKey
   default: "xxxx"
   required: true
-  type: secret
+  type: string
   label: New Relic License Key
   group: "Global Settings"
 - variable: global.clusterName

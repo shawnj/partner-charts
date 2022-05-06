@@ -1,4 +1,0 @@
-apiVersion: v1
-name: pixie-operator-helm2-chart
-type: application
-version: 0.0.24

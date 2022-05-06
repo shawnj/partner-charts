@@ -1,17 +1,16 @@
 --- charts-original/Chart.yaml
 +++ charts/Chart.yaml
-@@ -1,4 +1,10 @@
+@@ -1,4 +1,9 @@
  apiVersion: v2
 +kubeVersion: "1.16 - 1.22"
 +annotations:
 +  catalog.cattle.io/certified: partner
 +  catalog.cattle.io/release-name: newrelic-bundle
-+  catalog.cattle.io/namespace: newrelic
 +  catalog.cattle.io/display-name: New Relic
  dependencies:
  - condition: ksm.enabled
    name: kube-state-metrics
-@@ -37,7 +43,7 @@
+@@ -37,7 +42,7 @@
  description: A chart groups together the individual charts for the New Relic Kubernetes
    solution for more comfortable deployment.
  home: https://github.com/newrelic/helm-charts

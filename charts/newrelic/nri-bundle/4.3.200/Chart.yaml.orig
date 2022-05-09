@@ -1,7 +1,3 @@
-annotations:
-  catalog.cattle.io/certified: partner
-  catalog.cattle.io/display-name: New Relic
-  catalog.cattle.io/release-name: newrelic-bundle
 apiVersion: v2
 dependencies:
 - condition: ksm.enabled
@@ -38,12 +34,11 @@ dependencies:
 description: A chart groups together the individual charts for the New Relic Kubernetes
   solution for more comfortable deployment.
 home: https://github.com/newrelic/helm-charts
-icon: https://newrelic.com/themes/custom/curio/assets/mediakit/new_relic_logo_vertical.png
+icon: https://newrelic.com/assets/newrelic/source/NewRelic-logo-square.svg
 keywords:
 - infrastructure
 - newrelic
 - monitoring
-kubeVersion: 1.16 - 1.22
 maintainers:
 - name: alvarocabanas
   url: https://github.com/alvarocabanas
@@ -73,4 +68,4 @@ sources:
 - https://github.com/newrelic/helm-charts/tree/master/charts/newrelic-logging
 - https://github.com/newrelic/helm-charts/tree/master/charts/newrelic-pixie
 - https://github.com/newrelic/newrelic-infra-operator/tree/master/charts/newrelic-infra-operator
-version: 4.3.200
+version: 4.3.2

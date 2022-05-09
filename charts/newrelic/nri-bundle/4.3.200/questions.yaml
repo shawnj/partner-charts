@@ -50,6 +50,7 @@ questions:
     type: string
     label: New Relic Pixie API Key
     group: "Select Components"
+    description: "Required if deploying Pixie."
 - variable: pixie-chart.enabled
   default: false
   required: false
@@ -64,12 +65,14 @@ questions:
     type: string
     label: Pixie Deploy Key
     group: "Select Components"
+    description: "Required if deploying Pixie."
   - variable: pixie-chart.clusterName
     default: ""
     required: false
     type: string
     label: Kubernetes Cluster Name for Pixie
     group: "Select Components"
+    description: "Required if deploying Pixie."
 - variable: newrelic-infra-operator.enabled
   default: false
   required: false

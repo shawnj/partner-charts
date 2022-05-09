@@ -10,7 +10,12 @@
  dependencies:
  - condition: ksm.enabled
    name: kube-state-metrics
-@@ -34,7 +39,7 @@
+@@ -30,11 +35,12 @@
+ - alias: pixie-chart
+   condition: pixie-chart.enabled
+   name: pixie-operator-chart
++  version: 0.0.26
+   repository: file://./charts/pixie-operator-chart
  description: A chart groups together the individual charts for the New Relic Kubernetes
    solution for more comfortable deployment.
  home: https://github.com/newrelic/helm-charts

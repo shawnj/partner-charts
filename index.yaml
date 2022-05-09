@@ -290,12 +290,13 @@ entries:
   - annotations:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/display-name: Sources for Amazon Web Services
+      catalog.cattle.io/hidden: "true"
       catalog.cattle.io/release-name: aws-event-sources
     apiVersion: v2
     appVersion: 1.7.0
-    created: "2021-08-23T11:24:51.230234+05:30"
+    created: "2022-05-05T03:17:41.903057-04:00"
     description: AWS Event Sources controller for Kubernetes
-    digest: 3b5cb9e51589262bff329d41439ff65863757448f6f35fd982aa096b4a3cc3b7
+    digest: 1c34c4b96c7114116bca775a5deb949f2d8b5698e0967889d56087f39952c487
     home: https://github.com/triggermesh/aws-event-sources
     icon: https://global-uploads.webflow.com/5f683649f57c927210b6707e/5f683649f57c9261bab67097_logo.svg
     keywords:
@@ -1035,6 +1036,30 @@ entries:
     urls:
     - assets/dynatrace-oneagent-operator/dynatrace-oneagent-operator-0.8.000.tgz
     version: 0.8.000
+  external-secrets:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: External Secrets Operator
+      catalog.cattle.io/release-name: external-secrets-operator
+    apiVersion: v2
+    appVersion: v0.5.2
+    created: "2022-05-03T10:09:49.969787Z"
+    description: External secret management for Kubernetes
+    digest: 4dccd32308d593c4955bdc9d3772c483cd727fa7a610808557785141b24ca017
+    home: https://github.com/external-secrets/external-secrets
+    icon: https://raw.githubusercontent.com/external-secrets/external-secrets/main/assets/eso-logo-large.png
+    keywords:
+    - kubernetes-external-secrets
+    - secrets
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - email: kellinmcavoy@gmail.com
+      name: mcavoyk
+    name: external-secrets
+    type: application
+    urls:
+    - assets/external-secrets-operator/external-secrets-0.5.200.tgz
+    version: 0.5.200
   falcon-sensor:
   - annotations:
       catalog.cattle.io/certified: partner
@@ -1941,6 +1966,37 @@ entries:
       catalog.cattle.io/display-name: HPE CSI Driver for Kubernetes
       catalog.cattle.io/release-name: hpe-csi-driver
     apiVersion: v1
+    appVersion: 2.1.1
+    created: "2022-04-22T14:30:11.475699-07:00"
+    description: A Helm chart for installing the HPE CSI Driver for Kubernetes
+    digest: 1cd907895576c00b94500dfe9de895c217040cb10982bb0a22691b6d32499c36
+    home: https://hpe.com/storage/containers
+    icon: https://raw.githubusercontent.com/hpe-storage/co-deployments/master/docs/assets/hpedev.png
+    keywords:
+    - HPE
+    - Storage
+    - CSI
+    kubeVersion: 1.21 - 1.23
+    maintainers:
+    - email: datamattsson@hpe.com
+      name: datamattsson
+    name: hpe-csi-driver
+    sources:
+    - https://github.com/hpe-storage/co-deployments
+    - https://github.com/hpe-storage/csi-driver
+    urls:
+    - assets/hpe-csi-driver/hpe-csi-driver-2.1.1.tgz
+    version: 2.1.1
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://scod.hpedev.io/csi_driver
+      artifacthub.io/prerelease: "false"
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: HPE CSI Driver for Kubernetes
+      catalog.cattle.io/release-name: hpe-csi-driver
+    apiVersion: v1
     appVersion: 2.1.0
     created: "2022-01-28T12:36:32.968782-08:00"
     description: A Helm chart for installing the HPE CSI Driver for Kubernetes
@@ -2462,6 +2518,25 @@ entries:
     - assets/k8s-triliovault-operator/k8s-triliovault-operator-v2.0.200.tgz
     version: v2.0.200
   k10:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: K10
+      catalog.cattle.io/release-name: k10
+    apiVersion: v2
+    appVersion: 4.5.14
+    created: "2022-04-23T12:56:38.613073597Z"
+    description: Kasten’s K10 Data Management Platform
+    digest: fe0e8ddc10e04937a4690ddb5818748c373f58d5a928cf4030c873d6e2daa160
+    home: https://kasten.io/
+    icon: https://docs.kasten.io/_static/kasten-logo-vertical.png
+    kubeVersion: '>= 1.17.0-0'
+    maintainers:
+    - email: support@kasten.io
+      name: kastenIO
+    name: k10
+    urls:
+    - assets/k10/k10-4.5.1400.tgz
+    version: 4.5.1400
   - annotations:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/display-name: K10
@@ -3388,6 +3463,28 @@ entries:
     urls:
     - assets/openebs/openebs-1.12.300.tgz
     version: 1.12.300
+  pixie-operator-chart:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: Pixie
+      catalog.cattle.io/release-name: pixie
+    apiVersion: v2
+    created: "2022-05-03T10:40:47.008333989-07:00"
+    description: Pixie is an open source observability tool for Kubernetes applications.
+      Use Pixie to view the high-level state of your cluster and also drill-down into
+      more detailed views.
+    digest: 2eacbbc04c5034e8b435f11ab941719a14760d42b59e3610440132dbbfeb4f48
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/pixie/icon/color/pixie-icon-color.svg
+    keywords:
+    - monitoring
+    - metric
+    - observability
+    kubeVersion: '>=1.16.0'
+    name: pixie-operator-chart
+    type: application
+    urls:
+    - assets/pixie/pixie-operator-chart-0.0.2501.tgz
+    version: 0.0.2501
   portshift-operator:
   - annotations:
       catalog.cattle.io/certified: partner
@@ -3444,6 +3541,42 @@ entries:
     - assets/portshift-operator/portshift-operator-0.1.000.tgz
     version: 0.1.000
   portworx:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: Portworx
+      catalog.cattle.io/release-name: portworx
+    apiVersion: v1
+    appVersion: 2.9.1
+    created: "2022-04-12T23:42:58.45929058-06:00"
+    description: A Helm chart for installing Portworx on Kubernetes.
+    digest: 139b59da3fcef4600a624effd3f1db9355299ddb18ddd99dfb47a2ba58643c0e
+    home: https://portworx.com/
+    icon: https://raw.githubusercontent.com/portworx/helm/master/doc/media/k8s-porx.png
+    keywords:
+    - Storage
+    - ICP
+    - persistent disk
+    - pvc
+    - cloud native storage
+    - persistent storage
+    - portworx
+    - amd64
+    kubeVersion: '>=1.16.0'
+    maintainers:
+    - email: hadesai@purestorage.com
+      name: harsh-px
+    - email: onaumov@purestorage.com
+      name: trierra
+    - email: tasharma@purestorage.com
+      name: sharma-tapas
+    - email: dahuang@purestorage.com
+      name: dahuang-purestorage
+    name: portworx
+    sources:
+    - https://github.com/portworx/charts-rancher/tree/master/stable
+    urls:
+    - assets/portworx/portworx-2.9.100.tgz
+    version: 2.9.100
   - annotations:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/display-name: Portworx
@@ -3542,6 +3675,43 @@ entries:
     - assets/sextant/sextant-2.2.1700.tgz
     version: 2.2.1700
   shipa:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: Shipa
+      catalog.cattle.io/namespace: shipa-system
+      catalog.cattle.io/release-name: shipa
+    apiVersion: v2
+    appVersion: 1.7.0
+    created: "2022-04-27T14:23:23.352452-04:00"
+    dependencies:
+    - name: mongodb
+      repository: file://./charts/mongodb
+      tags:
+      - defaultDB
+    - name: mongodb-replicaset
+      repository: file://./charts/mongodb-replicaset
+      tags:
+      - legacyMongoReplicaset
+    description: A Helm chart for Kubernetes to install the Shipa Control Plane
+    digest: ff652d652575a7b97a260f3ea88bed19f9c86cce437106093d491e63fe4086e8
+    home: https://www.shipa.io
+    icon: https://www.shipa.io/wp-content/uploads/2020/11/Shipa-banner-768x307.png
+    keywords:
+    - shipa
+    - deployment
+    - aac
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: rlachhman@shipa.io
+      name: ravi
+    name: shipa
+    sources:
+    - https://github.com/shipa-corp
+    - https://github.com/shipa-corp/helm-chart
+    type: application
+    urls:
+    - assets/shipa/shipa-1.7.0.tgz
+    version: 1.7.0
   - annotations:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/display-name: Shipa

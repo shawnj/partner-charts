@@ -10,7 +10,7 @@
  dependencies:
  - condition: ksm.enabled
    name: kube-state-metrics
-@@ -37,7 +42,7 @@
+@@ -34,7 +39,7 @@
  description: A chart groups together the individual charts for the New Relic Kubernetes
    solution for more comfortable deployment.
  home: https://github.com/newrelic/helm-charts

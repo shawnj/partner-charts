@@ -17,7 +17,7 @@ questions:
   type: boolean
   label: Enable KSM
   group: "Select Components"
-  description: "This is mandatory if `infrastructure.enabled` is set to `true` and the user does not provide its own instance of KSM version >=1.8 and <=2.0"
+  description: "This is mandatory if `Enable Infrastructure` is set to `true` and the user does not provide its own instance of KSM version >=1.8 and <=2.0"
 - variable: webhook.enabled
   default: true
   required: false

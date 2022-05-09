@@ -50,7 +50,7 @@ questions:
     type: string
     label: New Relic Pixie API Key
     group: "Select Components"
-- variable: pixie-operator-chart.enabled
+- variable: pixie-chart.enabled
   default: false
   required: false
   type: boolean
